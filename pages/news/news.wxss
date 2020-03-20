@@ -1,0 +1,36 @@
+/* pages/news/news.wxss */
+
+.item{
+  /* width: 690rpx; */
+  padding: 0 24rpx 0 36rpx;
+  margin-bottom: 20rpx;
+  background:rgba(255,255,255,1);
+  border-bottom:rgba(244,244,244,1) 20rpx solid;
+}
+.red{
+  width: 20rpx;
+  height: 20rpx;
+  background-color: #e94343;
+}
+.title{
+  height: 122rpx;
+  font-size:36rpx;
+  font-family:PingFangSC-Medium,PingFang SC;
+  color:rgba(35,32,32,1);
+  line-height:50rpx;
+  border-bottom: rgba(236,238,244,1) 2rpx solid;
+}
+.text{
+  font-size:28rpx;
+  font-family:PingFangSC-Regular,PingFang SC;
+  color:rgba(35,32,32,1);
+  margin-top: 26rpx;
+  margin-bottom: 16rpx;
+}
+.time{
+  font-size:24rpx;
+  font-family:PingFangSC-Regular,PingFang SC;
+  color:rgba(139,139,139,1);
+  line-height:34rpx;
+  margin-bottom: 26rpx;
+}

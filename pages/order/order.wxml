@@ -1,0 +1,59 @@
+<!--pages/order/order.wxml-->
+<view class="tab-control flex">
+  <block wx:for="{{tabTitle}}" wx:key="index">
+    <view class="tab-item flex flex-jcc {{currentIndex== index?'active':''}}" bind:tap="handleItemClick" data-index="{{index}}">
+      <text>{{item}}</text>
+    </view>
+  </block>
+</view>
+<swiper current="{{currentIndex}}" duration="300" bindchange="swiperTab" style="{{clinetHStr}}">
+  <swiper-item>
+    <scroll-view scroll-y='true' style="{{clinetHStr}}">
+      <block wx:for='{{orderList}}' wx:key='id'>
+        <goods goodInfo='{{item}}' type='order'>
+        </goods>
+      </block>
+    </scroll-view>
+
+  </swiper-item>
+  <swiper-item>
+    <scroll-view scroll-y='true' style="{{clinetHStr}}">
+      <view class="content" wx:for='{{orderList}}' wx:key='index'>
+        <view class="order_box flex flex-aic flex-jcc flex-jcsa">
+          <view class="swiper_order">{{item.ordernum}}</view>
+          <view class="swiper_buy">{{item.buy}}</view>
+        </view>
+        <view class="class_box flex flex-aic flex-jcsa">
+          <image class="class_img" src='{{item.url}}'></image>
+          <view class="class_title">
+            <view class="title_up line-clamp2"> {{item.title}}</view>
+            <view class="title_down flex flex-aic">
+              <image src="{{item.url2}}" style="width:32rpx;height:32rpx;margin-right:10rpx;"></image>
+              {{item.desc}}
+            </view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </swiper-item>
+  <swiper-item>
+    <scroll-view scroll-y='true' style="{{clinetHStr}}">
+      <view class="content" wx:for='{{orderList}}' wx:key='index'>
+        <view class="order_box flex flex-aic flex-jcc flex-jcsa">
+          <view class="swiper_order">{{item.ordernum}}</view>
+          <view class="swiper_buy">{{item.buy}}</view>
+        </view>
+        <view class="class_box flex flex-aic flex-jcsa">
+          <image class="class_img" src='{{item.url}}'></image>
+          <view class="class_title">
+            <view class="title_up line-clamp2"> {{item.title}}</view>
+            <view class="title_down flex flex-aic">
+              <image src="{{item.url2}}" style="width:32rpx;height:32rpx;margin-right:10rpx;"></image>
+              {{item.desc}}
+            </view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </swiper-item>
+</swiper>

@@ -1,0 +1,11 @@
+<!--pages/news/news.wxml-->
+<view class="new_box">
+  <view class="item" wx:for="{{list}}" wx:key="{{item.id}}">
+    <view class="title flex flex-aic">
+      <view class="red"></view>
+      <view style="margin-left:16rpx;">{{item.title}}</view>
+    </view>
+    <view class="text">{{item.msg}}</view>
+    <view class="time">{{item.time}}</view>
+  </view>
+</view>

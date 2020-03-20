@@ -1,0 +1,4 @@
+<!--pages/test/test.wxml-->
+<block wx:for='{{goods}}' wx:key='id'>
+  <goods goodInfo='{{item}}' type='order' bind:click='select'> </goods>
+</block>

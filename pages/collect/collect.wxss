@@ -1,0 +1,38 @@
+/* pages/collect/collect.wxss */
+.box{
+  margin: 10rpx 0;
+}
+.collect_box {
+  position: relative;
+  height: 158rpx;
+  margin: 40rpx 0 52rpx 28rpx;
+}
+.collect_img {
+  width: 246rpx;
+  height: 158rpx;
+}
+.collect_title {
+  height: 158rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  margin-right: 106rpx;
+}
+.title_up {
+  font-size: 32rpx;
+  color: rgba(35, 32, 32, 1);
+  line-height: 44rpx;
+  width:348rpx;
+  font-family:PingFangSC-Regular,PingFang SC;
+}
+.title_down {
+  height: 40rpx;
+  font-size: 28rpx;
+  color: rgba(139, 139, 139, 1);
+  margin-top: 30rpx;
+}
+.collect_heart{
+  position: absolute;
+  right: 30rpx;
+  bottom: 44rpx;
+  width:48rpx;
+  height:48rpx;
+}

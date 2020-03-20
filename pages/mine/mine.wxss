@@ -1,0 +1,134 @@
+/* pages/mine/mine.wxss */
+
+.uesr_box {
+  width: 100%;
+  height: 280rpx;
+  background: linear-gradient(90deg, rgba(255, 220, 194, 0.0716) 0%, rgba(242, 113, 59, 0.0716) 100%);
+  position: relative;
+}
+
+.userInfoBox {
+  padding-top: 42rpx;
+  width: 690rpx;
+}
+
+.userAvatarUrl {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 28rpx;
+}
+
+.userNickName {
+  width: 210rpx;
+  height: 58rpx;
+  font-size: 42rpx;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  color: rgba(35, 32, 32, 1);
+  line-height: 58rpx;
+  margin-left: 28rpx;
+}
+
+.img {
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.member {
+  padding: 0 28rpx;
+  background-color: #4a453e;
+  width: 634rpx;
+  height: 72rpx;
+  left: 30rpx;
+  margin-top: 40rpx;
+  position: absolute;
+  border-radius: 20rpx 20rpx 0 0;
+  overflow: hidden;
+}
+
+.img2 {
+  margin-top: 10rpx;
+}
+
+.img3 {
+  width: 102rpx;
+  height: 42rpx;
+}
+
+.img4 {
+  width: 10rpx;
+  height: 16rpx;
+  margin-left: 12rpx;
+}
+
+.title {
+  display: inline-block;
+  width: 48rpx;
+  height: 34rpx;
+  font-size: 24rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(60, 56, 51, 1);
+  line-height: 34rpx;
+}
+
+.title2 {
+  width: 112rpx;
+  height: 40rpx;
+  font-size: 28rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(222, 222, 222, 1);
+  line-height: 40rpx;
+  margin-left: 28rpx;
+}
+
+.details {
+  width: 120rpx;
+  height: 42rpx;
+  background-color: #ddc89b;
+  border-radius: 42rpx;
+}
+
+.list_box{
+  margin-top: 28rpx;
+  
+}
+
+.list_item{
+  padding: 28rpx 30rpx;
+    width: 690rpx;
+}
+
+.title3 {
+  width:200rpx;
+height:40rpx;
+font-size:34rpx;
+color:rgba(35,32,32,1);
+margin-left: 22rpx;
+}
+
+.desc{
+  width:200rpx;
+height:40rpx;
+font-size:28rpx;
+font-family:PingFangSC-Regular,PingFang SC;
+font-weight:400;
+color:rgba(139,139,139,1);
+}
+
+.tip {
+  margin: 54rpx 280rpx 24rpx 0;
+  font-size: 26rpx;
+  color: rgba(199, 199, 199, 1);
+}
+
+.input_box{
+  margin:  24rpx 0;
+  padding: 10rpx 30rpx;
+  font-size: 34rpx;
+  background: rgba(244, 244, 244, 1);
+  border-radius: 10rpx;
+}

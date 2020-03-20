@@ -1,0 +1,8 @@
+<!--pages/class/class.wxml-->
+<view wx:for='{{goods}}' wx:key='id'>
+  <view class="title flex flex-jcsb">
+    <view class="title2">您共拥有<i class="icon">3</i>个视频</view>
+    <view><button class="btn">兑换课程</button></view>
+  </view>
+  <goods goodInfo='{{item}}' type='class' bind:click='select'> </goods>
+</view>

@@ -1,0 +1,78 @@
+<!--pages/index2/index2.wxml-->
+<view class="container">
+  <!-- 搜索栏 -->
+  <view class=" search flex flex-aic flex-jcsb">
+    <view class="search_box flex flex-aic">
+      <image class="search_icon" src="/img/index/icon20x20_search@3x.png"></image>
+      <text class="search_text">搜索</text>
+    </view>
+    <image style="width:48rpx;height:48rpx;" src='/img/index/icon_xiaoxi.png'></image>
+  </view>
+  <!-- 轮播图 -->
+  <view class='banner flex flex-jcc'>
+    <swiper class='swiper_box' indicator-dots="true" indicator-color='rgba(255,255,255,0.5)' indicator-active-color='rgba(255,255,255,1)' autoplay interval="3000" circular="true">
+      <swiper-item wx:for="{{bannerList}}" wx:key="{{item.id}}">
+        <image src="{{item.url}}" style='width:100%;height:100%'></image>
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <!-- 可滚动视图区域 -->
+  <view class="title_box flex flex-aic flex-jcsb">
+    <view class="check-new"> 新课上架 </view>
+    <view class="flex flex-aic">
+      <view class="check-more">查看更多</view>
+      <image src="/img/index/icon_qianjin.png"></image>
+    </view>
+  </view>
+  <scroll-view scroll-x="true" class="scroll_box flex flex-aic">
+    <block wx:for="{{newClass}}" wx:key="url">
+      <view class="scroll_item" catchtap="click_good" data-item="{{item}}">
+        <image src="{{item.url}}"></image>
+        <view class="god_title">{{item.title}}</view>
+      </view>
+    </block>
+  </scroll-view>
+  <!-- 标题图片 -->
+  <view>
+    <image class="banner-img" mode="widthFix" src="/img/index/yunying_banner.png"></image>
+  </view>
+  <!-- 热销课程-->
+  <view class="title_box flex flex-aic flex-jcsb">
+    <view class="check-new"> 热销课程 </view>
+    <view class="flex flex-aic">
+      <view class="check-more">查看更多</view>
+      <image src="/img/index/icon_qianjin.png"></image>
+    </view>
+  </view>
+  <block wx:for='{{newClass2}}' wx:key='id'>
+    <goods goodInfo='{{item}}' type='list' bind:click='select'> </goods>
+  </block>
+  <!-- <view class="title-box2 flex flex-aic flex-jcsb" wx:for="{{newClass2}}" wx:key="url">
+    <image class="img_box2" src="{{item.url}}"></image>
+    <view class="god_title2">
+      <view class="title_up"> {{item.title}}</view>
+      <view class="title_down"> {{item.title2}}</view>
+    </view>
+  </view> -->
+  <!-- 标题图片2 -->
+  <view>
+    <image class="banner-img" mode="widthFix" src="/img/index/yunying_banner复制.png"></image>
+  </view>
+  <view class="title_box flex flex-aic flex-jcsb">
+    <view class="check-new"> 精品课程 </view>
+    <view class="flex flex-aic">
+      <view class="check-more">查看更多</view>
+      <image src="/img/index/icon_qianjin.png"></image>
+    </view>
+  </view>
+  <view class="title-box5">
+    <view class="tltle-box4" wx:for="{{newClass3}}" wx:key="url">
+      <view class="title-box3">
+        <image class="img_box3" src="{{item.url}}"></image>
+        <view class="title_up2"> {{item.title}}</view>
+        <view class="title_down2"> {{item.title2}}</view>
+      </view>
+    </view>
+  </view>
+</view>

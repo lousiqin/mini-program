@@ -1,0 +1,48 @@
+<!--pages/mine/mine.wxml-->
+<view>
+  <view class="uesr_box ">
+    <view class="flex  flex-jcsb flex-acc userInfoBox">
+      <view class="flex flex-aic ">
+        <view class="userAvatarUrl">
+          <open-data type="userAvatarUrl"></open-data>
+        </view>
+        <view class="userNickName">
+          <open-data type="userNickName" lang="zh_CN"></open-data>
+        </view>
+      </view>
+      <image class="img" src="/img/mine/icon_xiaoxi.png"></image>
+    </view>
+    <view class="flex flex-acc flex-jcsb member">
+      <view class="flex flex-aic flex-jcc">
+        <image class="img2" src="/img/mine/icon_huiyuan@2x.png" style="width:30rpx;height:32rpx"></image>
+        <view class="title2">普通会员</view>
+      </view>
+      <view class="details flex flex-jcc flex-acc" catchtap="show">
+        <view class="title">详情</view>
+        <image class="img4" src="/img/mine/icon_qianjin_dark.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class="list_box ">
+    <block wx:for='{{list}}' wx:key='title'>
+      <view class="list_item flex flex-acc flex-jcsb ">
+        <view class="flex flex-acc">
+          <image src="{{item.url}}" style="width:48rpx;height:48rpx"></image>
+          <view class="title3">{{item.title}}</view>
+        </view>
+        <view class="flex flex-acc">
+          <view class="desc">
+          {{item.desc}}
+          </view>
+          <image src="/img/mine/icon_qianjin.png" style="width:28rpx;height:28rpx"></image>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
+ <Model title="兑换课程" bindclick='myclick' show="{{showModel}}" input-option="{{madel}}">
+  <view slot="after">
+    <view class="tip">请输入兑换码</view>
+    <view type="text" class="input_box"></view>
+  </view>
+ </Model>

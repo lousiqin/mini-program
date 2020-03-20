@@ -1,0 +1,9 @@
+/* pages/class/class.wxss */
+.title{
+  padding: 0 20rpx;
+}
+.btn{
+  width: 150rpx;
+  height: 80rpx;
+  margin: 0 auto;
+}
