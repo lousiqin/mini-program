@@ -1,0 +1,23 @@
+<!--components/model/model.wxml-->
+<view class="modal_box" wx:if='{{show}}'>
+  <view class="zhezhao" catchtap="click" data-type="{{false}}"> </view>
+  <view class="main_box">
+    <view style="text-align:center;font-size:34rpx;">{{title}}</view>
+    <!-- <view class="tip">请输入兑换码</view>
+    <block wx:for='{{inputOption}}'>
+      <input class="input_box"></input>
+    </block> -->
+    <slot name="after"></slot>
+    <!-- <block wx:for='{{inputOption}}' wx:key='item'> -->
+    <!-- <input class="input_box value='{{key1}}' data-key='{{item}}' bindtap='userInput' "></input> -->
+      <!-- <input class="input_box" value="{{model}}" ></input> -->
+    <!-- </block> -->
+    <!-- <input class="input_box" value="{{username}}" bindinput="userInput"></input> -->
+    <!-- <view class="title">请输入兑换码</view>
+    <view type="text" class="input"></view> -->
+    <view class="btn_group">
+      <view class="btn_style cancel_style" style="color:{{cancelColor}}" catchtap="click" data-type="{{false}}">{{cancelText}}</view> 
+      <view class="btn_style canfirm_style" style="color:{{canfirmColor}}" catchtap="click" data-type='{{true}}'>{{canfirmText}}</view>
+    </view>
+  </view>
+</view>
