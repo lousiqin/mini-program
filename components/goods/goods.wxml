@@ -16,8 +16,9 @@
         <view class="goods_item_desc line-clamp1" wx:else>{{goodInfo.desc}}</view>
       </view>
       <block wx:if='{{"collect"==goodtype}}'>
-        <view class='collect_icon'>
-           <image src="/img/collect/shoucang.png" style=" width:48rpx; height:48rpx"></image>
+        <view class='collect_icon' bindtap="onshow">
+           <image wx:if='{{isshow}}' src="/img/collect/shoucang.png" style=" width:48rpx; height:48rpx"></image>
+           <image wx:else  src="/img/collect/icon_shoucang_light.png" style=" width:48rpx; height:48rpx"></image>
         </view>
       </block>
     </view>

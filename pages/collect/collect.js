@@ -5,7 +5,6 @@ Page({
    * 页面的初始数据
    */
   data: {
-    currentIndex: -1,
     collectList: [{
         url: '/img/collect/img.png',
         title: '脐橙修剪的4个误区，你必须要纠正！',
@@ -23,13 +22,7 @@ Page({
       },
     ],
   },
-  handleHeartClick(event) {
-    const index = event.currentTarget.dataset.index;
-    this.setData({
-      currentIndex: index,
-      collected: !this.data.collected
-    })
-  },
+  
   /**
    * 生命周期函数--监听页面加载
    */

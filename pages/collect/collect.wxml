@@ -1,14 +1,4 @@
 <!--pages/collect/collect.wxml-->
 <block wx:for='{{collectList}}' wx:key='id'>
-  <goods goodInfo='{{item}}' goodtype='collect' bind:click='select'></goods>
+  <goods goodInfo='{{item}}' goodtype='collect'></goods>
 </block>
-<!-- 有什么问题 -->
-<!-- <view class="collect_box flex flex-aic flex-jcsb" wx:for='{{collectList}}'         wx:key='url'>
-  <image class="collect_img" src='{{item.url}}'></image>
-  <view class="collect_title">
-    <view class="title_up line-clamp2"> {{item.text}}</view>
-    <view class="title_down line-clamp1"> {{item.text2}}</view>
-    <image src="/image/collect/heart1.png" wx:if='{{currentIndex == index}}' class="collect_heart" bind:tap="handleHeartClick" data-index="{{index}}"></image>
-     <image wx:else  src="/image/collect/heart.png" class="collect_heart" bind:tap="handleHeartClick" data-index="{{index}}"></image>
-  </view>
-</view> -->
