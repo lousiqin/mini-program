@@ -1,10 +1,9 @@
 {
   "pages": [
-    
+    "pages/collect/collect",
     "pages/order/order",
     "pages/test/test",
     "pages/mine/mine",
-    "pages/collect/collect",
     "pages/news/news",
     "pages/index2/index2",
     "pages/class/class",
